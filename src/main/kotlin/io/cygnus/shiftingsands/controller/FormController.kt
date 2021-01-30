@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
-@CrossOrigin(origins = ["http://localhost"], allowCredentials = "true")
+@CrossOrigin(origins = ["http://localhost:4200"], allowCredentials = "true")
 @RestController
 @RequestMapping(path = ["/api"])
 class FormController(
