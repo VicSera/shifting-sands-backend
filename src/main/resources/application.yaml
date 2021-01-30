@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: ShiftingSandsBackend
+  session:
+    store-type: jdbc
+    jdbc:
+      initialize-schema: always
+  jpa:
+    properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: none
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:5432/shiftingsands-db
+    username: shiftingsands
+    password: password
+    driver-class-name: org.postgresql.Driver
+  security:
+    user:
+      name: user
+      password: password

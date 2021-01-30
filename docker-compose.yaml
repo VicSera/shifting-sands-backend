@@ -1,0 +1,12 @@
+version: "3"
+services:
+  local-database:
+    image: postgres
+    container_name: local-database
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: shiftingsands
+      POSTGRES_DB: shiftingsands-db
+    ports:
+      - 5432:5432
+
