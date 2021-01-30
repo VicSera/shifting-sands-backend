@@ -21,3 +21,5 @@ spring:
     user:
       name: user
       password: password
+server:
+  address: ${SERVER_ADDRESS:0.0.0.0}
